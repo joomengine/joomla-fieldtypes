@@ -1,0 +1,54 @@
+{
+    "name": "Captcha",
+    "store": 0,
+    "null_switch": "NOT NULL",
+    "indexes": "0",
+    "datadefault_other": "",
+    "datadefault": "",
+    "short_description": "Captcha robot check.",
+    "datatype": "",
+    "has_defaults": 0,
+    "properties": {
+        "properties0": {
+            "name": "type",
+            "example": "captcha",
+            "mandatory": "1",
+            "description": "(mandatory) must be captcha."
+        },
+        "properties1": {
+            "name": "name",
+            "example": "captcha",
+            "adjustable": "1",
+            "mandatory": "1",
+            "description": "(mandatory) is the unique name of the field."
+        },
+        "properties2": {
+            "name": "validate",
+            "example": "captcha",
+            "mandatory": "1",
+            "description": "(mandatory) must be captcha."
+        },
+        "properties3": {
+            "name": "label",
+            "example": "Captcha",
+            "mandatory": "1",
+            "translatable": "1",
+            "description": "(mandatory) (translatable) is the descriptive title of the field."
+        },
+        "properties4": {
+            "name": "description",
+            "example": "We do not like spam, please show us you are human",
+            "translatable": "1",
+            "description": "(optional) (translatable) is text that will be shown as a tooltip when the user moves the mouse over the drop-down box."
+        },
+        "properties5": {
+            "name": "namespace",
+            "example": "[[[component]]]",
+            "description": "(optional) the component name seems to work"
+        }
+    },
+    "description": "The Captcha field type that integrates with a Joomla captcha plugin to present a human verification challenge, typically used to distinguish between human users and automated systems.",
+    "datalenght": "",
+    "datalenght_other": "",
+    "guid": "206fdad4-14d0-45f1-9c84-3d09abf48a39"
+}
