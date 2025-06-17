@@ -1,0 +1,116 @@
+{
+    "name": "Privacy@",
+    "store": 0,
+    "null_switch": "NOT NULL",
+    "indexes": "0",
+    "datadefault_other": "",
+    "datadefault": "",
+    "short_description": "Joomla privacy field display.",
+    "datatype": "",
+    "has_defaults": 0,
+    "properties": {
+        "properties0": {
+            "name": "type",
+            "example": "privacy",
+            "mandatory": "1",
+            "description": "(mandatory) can be anything, just not the same as any other default Joomla field type. You can also not use the \"_\" (underscore) or \"-\" (hyphen) in the type name, and no spaces."
+        },
+        "properties1": {
+            "name": "name",
+            "example": "privacy",
+            "adjustable": "1",
+            "mandatory": "1",
+            "description": "(mandatory) is the unique name of the field."
+        },
+        "properties2": {
+            "name": "label",
+            "example": "Privacy Policy",
+            "adjustable": "1",
+            "mandatory": "1",
+            "translatable": "1",
+            "description": "(mandatory) (translatable) is the descriptive title of the field."
+        },
+        "properties3": {
+            "name": "description",
+            "example": "Read the full privacy policy.",
+            "adjustable": "1",
+            "translatable": "1",
+            "description": "(optional) (translatable) is text that will be shown as a tooltip when the user moves the mouse over the drop-down box."
+        },
+        "properties4": {
+            "name": "filter",
+            "example": "integer",
+            "adjustable": "1",
+            "description": "(optional) is a CSS class name for the HTML form field. If omitted this will default to 'inputbox'."
+        },
+        "properties5": {
+            "name": "option",
+            "example": "1|I agree,0|No",
+            "adjustable": "1",
+            "mandatory": "1",
+            "description": "(mandatory) set the options of this radio. Separate options with commas and use the pipe symbol to separate value from text."
+        },
+        "properties6": {
+            "name": "default",
+            "example": "0",
+            "adjustable": "1",
+            "description": "(optional) (not translatable) is the default value."
+        },
+        "properties7": {
+            "name": "required",
+            "example": "true",
+            "adjustable": "1",
+            "description": "(optional) The field must be filled before submitting the form."
+        },
+        "properties8": {
+            "name": "showon",
+            "example": "",
+            "adjustable": "1",
+            "description": "(optional) show this field on the bases of the value in another field. https:\/\/joomla.stackexchange.com\/a\/17682\/2166"
+        },
+        "properties9": {
+            "name": "onchange",
+            "example": "",
+            "adjustable": "1",
+            "description": "(optional) HTML equivalent attribute (javascript use)"
+        },
+        "properties10": {
+            "name": "extends",
+            "example": "radio",
+            "mandatory": "1",
+            "description": "Must be radio"
+        },
+        "properties11": {
+            "name": "type_phpHEADER_1",
+            "example": "use Joomla\\CMS\\Factory;\r\nuse Joomla\\CMS\\Language\\Text;",
+            "adjustable": "1",
+            "mandatory": "1",
+            "description": "The Header USE options"
+        },
+        "properties12": {
+            "name": "type_php_1",
+            "example": "\t\/**\r\n\t * Method to get the field input markup.\r\n\t *\r\n\t * @return  string   The field input markup.\r\n\t *\r\n\t * @since   3.9.0\r\n\t *\/\r\n\tprotected function getInput()\r\n\t{\r\n\t\t\/\/ Display the message before the field\r\n\t\techo $this->getRenderer('plugins.system.privacyconsent.message')->render($this->getLayoutData());\r\n\r\n\t\treturn parent::getInput();\r\n\t}",
+            "adjustable": "1",
+            "mandatory": "1",
+            "description": "The php for the getInput method."
+        },
+        "properties13": {
+            "name": "type_phpa_1",
+            "example": "\t\/**\r\n\t * Method to get the field label markup.\r\n\t *\r\n\t * @return  string  The field label markup.\r\n\t *\r\n\t * @since   3.9.0\r\n\t *\/\r\n\tprotected function getLabel()\r\n\t{\r\n\t\tif ($this->hidden)\r\n\t\t{\r\n\t\t\treturn '';\r\n\t\t}\r\n\r\n\t\treturn $this->getRenderer('plugins.system.privacyconsent.label')->render($this->getLayoutData());\r\n\r\n\t}",
+            "adjustable": "1",
+            "mandatory": "1",
+            "description": "The php for the getLabel method."
+        },
+        "properties14": {
+            "name": "type_phpb_1",
+            "example": "\t\/**\r\n\t * Method to get the data to be passed to the layout for rendering.\r\n\t *\r\n\t * @return  array\r\n\t *\r\n\t * @since   3.9.4\r\n\t *\/\r\n\tprotected function getLayoutData()\r\n\t{\r\n\t\t$data = parent::getLayoutData();\r\n\r\n\t\t$article = false;\r\n\t\t$privacyArticle = $this->element['article'] > 0 ? (int) $this->element['article'] : 0;\r\n\r\n\t\tif ($privacyArticle && Factory::getApplication()->isClient('site'))\r\n\t\t{\r\n\t\t\t$db    = Factory::getDbo();\r\n\t\t\t$query = $db->getQuery(true)\r\n\t\t\t\t->select($db->quoteName(array('id', 'alias', 'catid', 'language')))\r\n\t\t\t\t->from($db->quoteName('#__content'))\r\n\t\t\t\t->where($db->quoteName('id') . ' = ' . (int) $privacyArticle);\r\n\t\t\t$db->setQuery($query);\r\n\t\t\t$article = $db->loadObject();\r\n\r\n\t\t\tJLoader::register('ContentHelperRoute', JPATH_BASE . '\/components\/com_content\/helpers\/route.php');\r\n\r\n\t\t\t$slug = $article->alias ? ($article->id . ':' . $article->alias) : $article->id;\r\n\t\t\t$article->link  = ContentHelperRoute::getArticleRoute($slug, $article->catid, $article->language);\r\n\t\t}\r\n\r\n\t\t$extraData = array(\r\n\t\t\t'privacynote' => !empty($this->element['note']) ? $this->element['note'] : Text::_('By signing up to this web site and agreeing to the Privacy Policy you agree to this web site storing your information.'),\r\n\t\t\t'options' => $this->getOptions(),\r\n\t\t\t'value'   => (string) $this->value,\r\n\t\t\t'translateLabel' => $this->translateLabel,\r\n\t\t\t'translateDescription' => $this->translateDescription,\r\n\t\t\t'translateHint' => $this->translateHint,\r\n\t\t\t'privacyArticle' => $privacyArticle,\r\n\t\t\t'article' => $article,\r\n\t\t);\r\n\r\n\t\treturn array_merge($data, $extraData);\r\n\t}",
+            "adjustable": "1",
+            "mandatory": "1",
+            "description": "The php for the getLayoutData method."
+        }
+    },
+    "description": "The privacy field type in Joomla is a specialized custom form field introduced to assist extensions in handling privacy-related features; most notably, export and deletion requests in compliance with privacy regulations like the GDPR (General Data Protection Regulation).",
+    "datalenght": "",
+    "datalenght_other": "",
+    "guid": "60c1d674-8bb7-4b31-97ed-ee1f16bc412a"
+}
