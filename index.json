@@ -1,0 +1,338 @@
+{
+    "6cf5a33f-cb25-4a58-bfec-7e1511896402": {
+        "name": "Calendar",
+        "path": "src\/6cf5a33f-cb25-4a58-bfec-7e1511896402",
+        "settings": "src\/6cf5a33f-cb25-4a58-bfec-7e1511896402\/item.json",
+        "guid": "6cf5a33f-cb25-4a58-bfec-7e1511896402",
+        "desc": "Text box for entry of a date."
+    },
+    "f70346b3-2096-4f44-8b26-01ab87da7d1e": {
+        "name": "Category",
+        "path": "src\/f70346b3-2096-4f44-8b26-01ab87da7d1e",
+        "settings": "src\/f70346b3-2096-4f44-8b26-01ab87da7d1e\/item.json",
+        "guid": "f70346b3-2096-4f44-8b26-01ab87da7d1e",
+        "desc": "Drop down list of categories."
+    },
+    "10066262-b6e3-4f82-941e-cbe4f61ddd6c": {
+        "name": "Checkbox",
+        "path": "src\/10066262-b6e3-4f82-941e-cbe4f61ddd6c",
+        "settings": "src\/10066262-b6e3-4f82-941e-cbe4f61ddd6c\/item.json",
+        "guid": "10066262-b6e3-4f82-941e-cbe4f61ddd6c",
+        "desc": "A single checkbox."
+    },
+    "ac10859b-58da-4584-9682-36a6c2c8d04d": {
+        "name": "Checkboxes",
+        "path": "src\/ac10859b-58da-4584-9682-36a6c2c8d04d",
+        "settings": "src\/ac10859b-58da-4584-9682-36a6c2c8d04d\/item.json",
+        "guid": "ac10859b-58da-4584-9682-36a6c2c8d04d",
+        "desc": "Checkboxes that can be used for multi-select."
+    },
+    "7f60f198-53e7-4fe9-813f-d1b6c553680e": {
+        "name": "Color",
+        "path": "src\/7f60f198-53e7-4fe9-813f-d1b6c553680e",
+        "settings": "src\/7f60f198-53e7-4fe9-813f-d1b6c553680e\/item.json",
+        "guid": "7f60f198-53e7-4fe9-813f-d1b6c553680e",
+        "desc": "Color picker when clicking the input box."
+    },
+    "dd2e1f4b-f5db-45e8-85fa-efd27bae7b6a": {
+        "name": "Custom",
+        "path": "src\/dd2e1f4b-f5db-45e8-85fa-efd27bae7b6a",
+        "settings": "src\/dd2e1f4b-f5db-45e8-85fa-efd27bae7b6a\/item.json",
+        "guid": "dd2e1f4b-f5db-45e8-85fa-efd27bae7b6a",
+        "desc": "Custom drop down list of items entries."
+    },
+    "a4a39f70-070f-459c-be4b-0ac103a29b9a": {
+        "name": "CustomUser",
+        "path": "src\/a4a39f70-070f-459c-be4b-0ac103a29b9a",
+        "settings": "src\/a4a39f70-070f-459c-be4b-0ac103a29b9a\/item.json",
+        "guid": "a4a39f70-070f-459c-be4b-0ac103a29b9a",
+        "desc": "List of users."
+    },
+    "51f288d2-6eaa-42bc-a182-a6f69b3032b8": {
+        "name": "Editor",
+        "path": "src\/51f288d2-6eaa-42bc-a182-a6f69b3032b8",
+        "settings": "src\/51f288d2-6eaa-42bc-a182-a6f69b3032b8\/item.json",
+        "guid": "51f288d2-6eaa-42bc-a182-a6f69b3032b8",
+        "desc": "Editor area field."
+    },
+    "82f1b5ca-bb9b-44d7-9a7a-9a03fb2a31dd": {
+        "name": "Hidden",
+        "path": "src\/82f1b5ca-bb9b-44d7-9a7a-9a03fb2a31dd",
+        "settings": "src\/82f1b5ca-bb9b-44d7-9a7a-9a03fb2a31dd\/item.json",
+        "guid": "82f1b5ca-bb9b-44d7-9a7a-9a03fb2a31dd",
+        "desc": "Hidden field for storing fixed values."
+    },
+    "fdbb50ea-35d2-45b2-a0bc-076fdf1544b8": {
+        "name": "Integer",
+        "path": "src\/fdbb50ea-35d2-45b2-a0bc-076fdf1544b8",
+        "settings": "src\/fdbb50ea-35d2-45b2-a0bc-076fdf1544b8\/item.json",
+        "guid": "fdbb50ea-35d2-45b2-a0bc-076fdf1544b8",
+        "desc": "Dropdown of integers in a set range."
+    },
+    "a51dfc06-1b9b-4d0a-86ba-f705bcd40d4d": {
+        "name": "List",
+        "path": "src\/a51dfc06-1b9b-4d0a-86ba-f705bcd40d4d",
+        "settings": "src\/a51dfc06-1b9b-4d0a-86ba-f705bcd40d4d\/item.json",
+        "guid": "a51dfc06-1b9b-4d0a-86ba-f705bcd40d4d",
+        "desc": "Dropdown list of a custom-defined entries."
+    },
+    "69957007-e3d4-4976-a32b-611d02dbad71": {
+        "name": "Media",
+        "path": "src\/69957007-e3d4-4976-a32b-611d02dbad71",
+        "settings": "src\/69957007-e3d4-4976-a32b-611d02dbad71\/item.json",
+        "guid": "69957007-e3d4-4976-a32b-611d02dbad71",
+        "desc": "Select or upload media via modal."
+    },
+    "81668284-e572-4e17-927b-ba697fc64bd0": {
+        "name": "Meter",
+        "path": "src\/81668284-e572-4e17-927b-ba697fc64bd0",
+        "settings": "src\/81668284-e572-4e17-927b-ba697fc64bd0\/item.json",
+        "guid": "81668284-e572-4e17-927b-ba697fc64bd0",
+        "desc": "Displays a value within a defined range."
+    },
+    "f9ecacd0-8481-4157-8c71-d7aaefc2b7c3": {
+        "name": "Note",
+        "path": "src\/f9ecacd0-8481-4157-8c71-d7aaefc2b7c3",
+        "settings": "src\/f9ecacd0-8481-4157-8c71-d7aaefc2b7c3\/item.json",
+        "guid": "f9ecacd0-8481-4157-8c71-d7aaefc2b7c3",
+        "desc": "Displays custom text or headings in forms."
+    },
+    "5abd2b73-643b-4273-841a-787991aad968": {
+        "name": "Number",
+        "path": "src\/5abd2b73-643b-4273-841a-787991aad968",
+        "settings": "src\/5abd2b73-643b-4273-841a-787991aad968\/item.json",
+        "guid": "5abd2b73-643b-4273-841a-787991aad968",
+        "desc": "Single-line number input with step controls."
+    },
+    "0022598d-0ee1-44f2-aa94-c2eb47595f73": {
+        "name": "Password",
+        "path": "src\/0022598d-0ee1-44f2-aa94-c2eb47595f73",
+        "settings": "src\/0022598d-0ee1-44f2-aa94-c2eb47595f73\/item.json",
+        "guid": "0022598d-0ee1-44f2-aa94-c2eb47595f73",
+        "desc": "Text box for entry of a password."
+    },
+    "b868ed59-4208-4206-8504-95a35a74a11c": {
+        "name": "Radio",
+        "path": "src\/b868ed59-4208-4206-8504-95a35a74a11c",
+        "settings": "src\/b868ed59-4208-4206-8504-95a35a74a11c\/item.json",
+        "guid": "b868ed59-4208-4206-8504-95a35a74a11c",
+        "desc": "Radio buttons for option selection."
+    },
+    "627d3845-7273-4f75-8e63-7b3a319a42c8": {
+        "name": "Range",
+        "path": "src\/627d3845-7273-4f75-8e63-7b3a319a42c8",
+        "settings": "src\/627d3845-7273-4f75-8e63-7b3a319a42c8\/item.json",
+        "guid": "627d3845-7273-4f75-8e63-7b3a319a42c8",
+        "desc": "Slider to select a value within a range."
+    },
+    "05bf68d4-52f9-4705-8ae7-cba137fce0ad": {
+        "name": "Repeatable",
+        "path": "src\/05bf68d4-52f9-4705-8ae7-cba137fce0ad",
+        "settings": "src\/05bf68d4-52f9-4705-8ae7-cba137fce0ad\/item.json",
+        "guid": "05bf68d4-52f9-4705-8ae7-cba137fce0ad",
+        "desc": "Form fields with repeatable rows of inputs."
+    },
+    "626d0cba-a908-4a4f-a447-96d781aeaa0b": {
+        "name": "Spacer",
+        "path": "src\/626d0cba-a908-4a4f-a447-96d781aeaa0b",
+        "settings": "src\/626d0cba-a908-4a4f-a447-96d781aeaa0b\/item.json",
+        "guid": "626d0cba-a908-4a4f-a447-96d781aeaa0b",
+        "desc": "Visual divider with no stored value."
+    },
+    "d4c16f1e-fd6e-4714-90eb-f9d97edd9c32": {
+        "name": "SQL",
+        "path": "src\/d4c16f1e-fd6e-4714-90eb-f9d97edd9c32",
+        "settings": "src\/d4c16f1e-fd6e-4714-90eb-f9d97edd9c32\/item.json",
+        "guid": "d4c16f1e-fd6e-4714-90eb-f9d97edd9c32",
+        "desc": "Dropdown list populated by a database query."
+    },
+    "48cba89e-8fcb-481e-a7d3-2e41773e452d": {
+        "name": "Tag",
+        "path": "src\/48cba89e-8fcb-481e-a7d3-2e41773e452d",
+        "settings": "src\/48cba89e-8fcb-481e-a7d3-2e41773e452d\/item.json",
+        "guid": "48cba89e-8fcb-481e-a7d3-2e41773e452d",
+        "desc": "Entry point for tags (either AJAX or Nested)."
+    },
+    "1c6c519c-3bc8-4914-8940-3e9591b0bce6": {
+        "name": "Tel",
+        "path": "src\/1c6c519c-3bc8-4914-8940-3e9591b0bce6",
+        "settings": "src\/1c6c519c-3bc8-4914-8940-3e9591b0bce6\/item.json",
+        "guid": "1c6c519c-3bc8-4914-8940-3e9591b0bce6",
+        "desc": "Input field for telephone numbers."
+    },
+    "201327fe-3067-4316-a155-3fe2a52e05c0": {
+        "name": "Text",
+        "path": "src\/201327fe-3067-4316-a155-3fe2a52e05c0",
+        "settings": "src\/201327fe-3067-4316-a155-3fe2a52e05c0\/item.json",
+        "guid": "201327fe-3067-4316-a155-3fe2a52e05c0",
+        "desc": "Single-line text input field."
+    },
+    "76fe1250-6fa7-49e5-a0ee-f06d8d4c9f99": {
+        "name": "Textarea",
+        "path": "src\/76fe1250-6fa7-49e5-a0ee-f06d8d4c9f99",
+        "settings": "src\/76fe1250-6fa7-49e5-a0ee-f06d8d4c9f99\/item.json",
+        "guid": "76fe1250-6fa7-49e5-a0ee-f06d8d4c9f99",
+        "desc": "Multi-line text input area."
+    },
+    "ed8d8cf4-cb05-49cc-95ef-4ef275f539f9": {
+        "name": "Timezone",
+        "path": "src\/ed8d8cf4-cb05-49cc-95ef-4ef275f539f9",
+        "settings": "src\/ed8d8cf4-cb05-49cc-95ef-4ef275f539f9\/item.json",
+        "guid": "ed8d8cf4-cb05-49cc-95ef-4ef275f539f9",
+        "desc": "Dropdown list of time zones."
+    },
+    "8df6e07e-2b16-43ed-a18d-2059fa44cdf1": {
+        "name": "URL",
+        "path": "src\/8df6e07e-2b16-43ed-a18d-2059fa44cdf1",
+        "settings": "src\/8df6e07e-2b16-43ed-a18d-2059fa44cdf1\/item.json",
+        "guid": "8df6e07e-2b16-43ed-a18d-2059fa44cdf1",
+        "desc": "Text input for a valid URL."
+    },
+    "b0641980-5e78-42f6-972f-86aa607db23e": {
+        "name": "User",
+        "path": "src\/b0641980-5e78-42f6-972f-86aa607db23e",
+        "settings": "src\/b0641980-5e78-42f6-972f-86aa607db23e\/item.json",
+        "guid": "b0641980-5e78-42f6-972f-86aa607db23e",
+        "desc": "Modal selector for Joomla users."
+    },
+    "e2f31181-fbb3-4c3a-859d-72b6b0cff308": {
+        "name": "Usergrouplist",
+        "path": "src\/e2f31181-fbb3-4c3a-859d-72b6b0cff308",
+        "settings": "src\/e2f31181-fbb3-4c3a-859d-72b6b0cff308\/item.json",
+        "guid": "e2f31181-fbb3-4c3a-859d-72b6b0cff308",
+        "desc": "Dropdown list of Joomla user groups."
+    },
+    "0c80df15-52c6-4647-983b-4bb4888a2edf": {
+        "name": "Filelist",
+        "path": "src\/0c80df15-52c6-4647-983b-4bb4888a2edf",
+        "settings": "src\/0c80df15-52c6-4647-983b-4bb4888a2edf\/item.json",
+        "guid": "0c80df15-52c6-4647-983b-4bb4888a2edf",
+        "desc": "File dropdown from directory."
+    },
+    "d3ab2ae4-9370-4497-ae6d-dee2e0b74b7a": {
+        "name": "Folderlist",
+        "path": "src\/d3ab2ae4-9370-4497-ae6d-dee2e0b74b7a",
+        "settings": "src\/d3ab2ae4-9370-4497-ae6d-dee2e0b74b7a\/item.json",
+        "guid": "d3ab2ae4-9370-4497-ae6d-dee2e0b74b7a",
+        "desc": "Folder dropdown from directory."
+    },
+    "6da71c1e-119c-4e0d-a309-f3e52ecfa1d1": {
+        "name": "File",
+        "path": "src\/6da71c1e-119c-4e0d-a309-f3e52ecfa1d1",
+        "settings": "src\/6da71c1e-119c-4e0d-a309-f3e52ecfa1d1\/item.json",
+        "guid": "6da71c1e-119c-4e0d-a309-f3e52ecfa1d1",
+        "desc": "Input field for files"
+    },
+    "f183b0e2-017f-48bd-8dba-d332ce1b8d9e": {
+        "name": "Menuitem",
+        "path": "src\/f183b0e2-017f-48bd-8dba-d332ce1b8d9e",
+        "settings": "src\/f183b0e2-017f-48bd-8dba-d332ce1b8d9e\/item.json",
+        "guid": "f183b0e2-017f-48bd-8dba-d332ce1b8d9e",
+        "desc": "Dropdown list of items within a selected menu."
+    },
+    "913ed2ce-836c-48e8-97af-e482441f47df": {
+        "name": "Accesslevel",
+        "path": "src\/913ed2ce-836c-48e8-97af-e482441f47df",
+        "settings": "src\/913ed2ce-836c-48e8-97af-e482441f47df\/item.json",
+        "guid": "913ed2ce-836c-48e8-97af-e482441f47df",
+        "desc": "List of user accesslevels."
+    },
+    "7139f2c8-a70a-46a6-bbe3-4eefe54ca515": {
+        "name": "Subform",
+        "path": "src\/7139f2c8-a70a-46a6-bbe3-4eefe54ca515",
+        "settings": "src\/7139f2c8-a70a-46a6-bbe3-4eefe54ca515\/item.json",
+        "guid": "7139f2c8-a70a-46a6-bbe3-4eefe54ca515",
+        "desc": "Repeating sets of nested form fields."
+    },
+    "35948af5-9e79-4454-8dfa-682ee4fdf650": {
+        "name": "Email",
+        "path": "src\/35948af5-9e79-4454-8dfa-682ee4fdf650",
+        "settings": "src\/35948af5-9e79-4454-8dfa-682ee4fdf650\/item.json",
+        "guid": "35948af5-9e79-4454-8dfa-682ee4fdf650",
+        "desc": "Email form field type."
+    },
+    "37fa4e1d-b7ca-4a8f-aa4b-d8085c135233": {
+        "name": "Plugins",
+        "path": "src\/37fa4e1d-b7ca-4a8f-aa4b-d8085c135233",
+        "settings": "src\/37fa4e1d-b7ca-4a8f-aa4b-d8085c135233\/item.json",
+        "guid": "37fa4e1d-b7ca-4a8f-aa4b-d8085c135233",
+        "desc": "Dropdown of plugins from a specified folder."
+    },
+    "206fdad4-14d0-45f1-9c84-3d09abf48a39": {
+        "name": "Captcha",
+        "path": "src\/206fdad4-14d0-45f1-9c84-3d09abf48a39",
+        "settings": "src\/206fdad4-14d0-45f1-9c84-3d09abf48a39\/item.json",
+        "guid": "206fdad4-14d0-45f1-9c84-3d09abf48a39",
+        "desc": "Captcha robot check."
+    },
+    "088d47c0-b058-4894-b92e-dcf1b9d5a722": {
+        "name": "Groupedlist",
+        "path": "src\/088d47c0-b058-4894-b92e-dcf1b9d5a722",
+        "settings": "src\/088d47c0-b058-4894-b92e-dcf1b9d5a722\/item.json",
+        "guid": "088d47c0-b058-4894-b92e-dcf1b9d5a722",
+        "desc": "Dropdown list of grouped custom entries."
+    },
+    "7520c8f4-543d-4c7a-8e4f-e2da71c3b1cd": {
+        "name": "Modulelayout",
+        "path": "src\/7520c8f4-543d-4c7a-8e4f-e2da71c3b1cd",
+        "settings": "src\/7520c8f4-543d-4c7a-8e4f-e2da71c3b1cd\/item.json",
+        "guid": "7520c8f4-543d-4c7a-8e4f-e2da71c3b1cd",
+        "desc": "Dropdown of module layouts."
+    },
+    "60c1d674-8bb7-4b31-97ed-ee1f16bc412a": {
+        "name": "Privacy@",
+        "path": "src\/60c1d674-8bb7-4b31-97ed-ee1f16bc412a",
+        "settings": "src\/60c1d674-8bb7-4b31-97ed-ee1f16bc412a\/item.json",
+        "guid": "60c1d674-8bb7-4b31-97ed-ee1f16bc412a",
+        "desc": "Joomla privacy field display."
+    },
+    "20e88943-08db-49e6-a571-dba70cdf4cca": {
+        "name": "Terms@",
+        "path": "src\/20e88943-08db-49e6-a571-dba70cdf4cca",
+        "settings": "src\/20e88943-08db-49e6-a571-dba70cdf4cca\/item.json",
+        "guid": "20e88943-08db-49e6-a571-dba70cdf4cca",
+        "desc": "Displays Joomla terms and conditions."
+    },
+    "2c8b128f-7da2-4f55-b1d7-3613f902f590": {
+        "name": "Combo",
+        "path": "src\/2c8b128f-7da2-4f55-b1d7-3613f902f590",
+        "settings": "src\/2c8b128f-7da2-4f55-b1d7-3613f902f590\/item.json",
+        "guid": "2c8b128f-7da2-4f55-b1d7-3613f902f590",
+        "desc": "Combobox list field, allows free text."
+    },
+    "72680e92-2859-49c6-ad92-c2329c52f9f8": {
+        "name": "Imagelist",
+        "path": "src\/72680e92-2859-49c6-ad92-c2329c52f9f8",
+        "settings": "src\/72680e92-2859-49c6-ad92-c2329c52f9f8\/item.json",
+        "guid": "72680e92-2859-49c6-ad92-c2329c52f9f8",
+        "desc": "Image file dropdown from directory."
+    },
+    "715256a4-8cc2-4d66-9d08-31e58ca5b036": {
+        "name": "Modal Menu",
+        "path": "src\/715256a4-8cc2-4d66-9d08-31e58ca5b036",
+        "settings": "src\/715256a4-8cc2-4d66-9d08-31e58ca5b036\/item.json",
+        "guid": "715256a4-8cc2-4d66-9d08-31e58ca5b036",
+        "desc": "Styled dropdown of menu items."
+    },
+    "6349f152-8ef5-43bd-a89b-ce18f33ac5e5": {
+        "name": "Menu",
+        "path": "src\/6349f152-8ef5-43bd-a89b-ce18f33ac5e5",
+        "settings": "src\/6349f152-8ef5-43bd-a89b-ce18f33ac5e5\/item.json",
+        "guid": "6349f152-8ef5-43bd-a89b-ce18f33ac5e5",
+        "desc": "Dropdown list of Joomla menus."
+    },
+    "7ed21e79-cbc5-48e3-9ed0-ca72b0f2f1a1": {
+        "name": "DynamicCheckboxes@",
+        "path": "src\/7ed21e79-cbc5-48e3-9ed0-ca72b0f2f1a1",
+        "settings": "src\/7ed21e79-cbc5-48e3-9ed0-ca72b0f2f1a1\/item.json",
+        "guid": "7ed21e79-cbc5-48e3-9ed0-ca72b0f2f1a1",
+        "desc": "Super Power Repository Paths"
+    },
+    "a1cdb0a5-517c-425c-998a-333e92af3e32": {
+        "name": "ModalSelect",
+        "path": "src\/a1cdb0a5-517c-425c-998a-333e92af3e32",
+        "settings": "src\/a1cdb0a5-517c-425c-998a-333e92af3e32\/item.json",
+        "guid": "a1cdb0a5-517c-425c-998a-333e92af3e32",
+        "desc": "Modal Select to manage a database record. (J5+ only)"
+    }
+}
