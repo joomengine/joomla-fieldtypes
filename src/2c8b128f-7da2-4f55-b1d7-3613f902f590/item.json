@@ -1,0 +1,101 @@
+{
+    "name": "Combo",
+    "store": 0,
+    "null_switch": "NOT NULL",
+    "indexes": "0",
+    "datadefault_other": "",
+    "datadefault": "",
+    "short_description": "Combobox list field, allows free text.",
+    "datatype": "",
+    "has_defaults": 0,
+    "properties": {
+        "properties0": {
+            "name": "type",
+            "example": "combo",
+            "mandatory": "1",
+            "description": "(mandatory) must be combo."
+        },
+        "properties1": {
+            "name": "name",
+            "example": "type",
+            "adjustable": "1",
+            "mandatory": "1",
+            "description": "(mandatory) is the unique name of the parameter."
+        },
+        "properties2": {
+            "name": "label",
+            "example": "Type",
+            "adjustable": "1",
+            "mandatory": "1",
+            "translatable": "1",
+            "description": "(mandatory) (translatable) is the descriptive title of the field."
+        },
+        "properties3": {
+            "name": "description",
+            "example": "",
+            "adjustable": "1",
+            "translatable": "1",
+            "description": "(optional) (translatable) tooltip for the form field."
+        },
+        "properties4": {
+            "name": "message",
+            "example": "",
+            "adjustable": "1",
+            "translatable": "1",
+            "description": "(optional) (translatable) is text that will be shown as error on validation."
+        },
+        "properties5": {
+            "name": "class",
+            "example": "combobox",
+            "adjustable": "1",
+            "description": "(optional) specify your own classes for additonal markup, defaults to \"combobox\"."
+        },
+        "properties6": {
+            "name": "filter",
+            "example": "",
+            "adjustable": "1",
+            "description": "(optional) filter options"
+        },
+        "properties7": {
+            "name": "required",
+            "example": "",
+            "adjustable": "1",
+            "description": "(optional) The field must be filled before submitting the form."
+        },
+        "properties8": {
+            "name": "validate",
+            "example": "",
+            "adjustable": "1",
+            "description": "(optional) The validation method for the form field.  This value will determine which method is used to validate the value for a field."
+        },
+        "properties9": {
+            "name": "option",
+            "example": "0|Option 1,1|Option 2,2|Option 1",
+            "adjustable": "1",
+            "mandatory": "1",
+            "description": "(mandatory) set the options of this radio. Separate options with commas and use the pipe symbol to separate value from text."
+        },
+        "properties10": {
+            "name": "default",
+            "example": "0",
+            "adjustable": "1",
+            "description": "(optional) is the default list item value."
+        },
+        "properties11": {
+            "name": "showon",
+            "example": "",
+            "adjustable": "1",
+            "description": "(optional) Allows you to hide the field based on the value(s) of another field; for Joomla 3.2.4+ https:\/\/joomla.stackexchange.com\/a\/17682\/2166"
+        },
+        "properties12": {
+            "name": "onchange",
+            "example": "",
+            "adjustable": "1",
+            "description": "(optional) HTML equivalent attribute (javascript use)"
+        }
+    },
+    "description": "A field type that combines a standard text input with a dropdown list of predefined options. Users can either type a custom value or choose from the available selections, offering flexibility in data entry.",
+    "datalenght": "",
+    "datalenght_other": "",
+    "guid": "2c8b128f-7da2-4f55-b1d7-3613f902f590"
+}
