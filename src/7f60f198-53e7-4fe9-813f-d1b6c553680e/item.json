@@ -1,0 +1,63 @@
+{
+    "name": "Color",
+    "store": 0,
+    "null_switch": "NOT NULL",
+    "indexes": "0",
+    "datadefault_other": "",
+    "datadefault": "",
+    "short_description": "Color picker when clicking the input box.",
+    "datatype": "VARCHAR",
+    "has_defaults": 1,
+    "properties": {
+        "properties0": {
+            "name": "type",
+            "example": "color",
+            "mandatory": "1",
+            "description": "(mandatory) must be color."
+        },
+        "properties1": {
+            "name": "name",
+            "example": "backgroundcolor",
+            "adjustable": "1",
+            "mandatory": "1",
+            "description": "(mandatory) is the unique name of the parameter."
+        },
+        "properties2": {
+            "name": "default",
+            "example": "#FFFFFF",
+            "adjustable": "1",
+            "description": "(optional) provides a color when not set."
+        },
+        "properties3": {
+            "name": "label",
+            "example": "Background",
+            "adjustable": "1",
+            "mandatory": "1",
+            "translatable": "1",
+            "description": "(mandatory) (translatable) is the descriptive title of the field."
+        },
+        "properties4": {
+            "name": "description",
+            "example": "Select the background color here.",
+            "adjustable": "1",
+            "translatable": "1",
+            "description": "(optional) (translatable) tooltip for the form field."
+        },
+        "properties5": {
+            "name": "required",
+            "example": "",
+            "adjustable": "1",
+            "description": "(optional) The field must be filled before submitting the form."
+        },
+        "properties6": {
+            "name": "showon",
+            "example": "",
+            "adjustable": "1",
+            "description": "(optional) show this field on the bases of the value in another field. https:\/\/joomla.stackexchange.com\/a\/17682\/2166"
+        }
+    },
+    "description": "Provides a color picker input that allows users to select a color from a visual palette or enter a hexadecimal color code, such as #ff00ff.",
+    "datalenght": "10",
+    "datalenght_other": "",
+    "guid": "7f60f198-53e7-4fe9-813f-d1b6c553680e"
+}
