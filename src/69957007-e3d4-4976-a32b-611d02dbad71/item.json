@@ -1,0 +1,87 @@
+{
+    "name": "Media",
+    "store": 0,
+    "null_switch": "NOT NULL",
+    "indexes": "0",
+    "datadefault_other": "",
+    "datadefault": "",
+    "short_description": "Select or upload media via modal.",
+    "datatype": "VARCHAR",
+    "has_defaults": 1,
+    "properties": {
+        "properties0": {
+            "name": "type",
+            "example": "media",
+            "mandatory": "1",
+            "description": "(mandatory) must be media."
+        },
+        "properties1": {
+            "name": "name",
+            "example": "media",
+            "adjustable": "1",
+            "mandatory": "1",
+            "description": "(mandatory) is the unique name of the field."
+        },
+        "properties2": {
+            "name": "label",
+            "example": "Media",
+            "adjustable": "1",
+            "mandatory": "1",
+            "translatable": "1",
+            "description": "(mandatory) (translatable) is the descriptive title of the field."
+        },
+        "properties3": {
+            "name": "description",
+            "example": "",
+            "adjustable": "1",
+            "translatable": "1",
+            "description": "(optional) (translatable) is text that will be shown as a tooltip when the user moves the mouse over the drop-down box."
+        },
+        "properties4": {
+            "name": "directory",
+            "example": "",
+            "adjustable": "1",
+            "description": "(optional) is the directory from which the user will be able to choose a file. This attribute should be relative to the top level \/images\/ folder. The default is that the user will be confined to the top level \/images\/ folder."
+        },
+        "properties5": {
+            "name": "preview",
+            "example": "false",
+            "adjustable": "1",
+            "description": "(optional) shows or hides the preview of the currently chosen image. (\"true\": Show always, \"tooltip\": Show as tooltip, \"false\": Show never). Default is \"tooltip\"."
+        },
+        "properties6": {
+            "name": "preview_width",
+            "example": "",
+            "adjustable": "1",
+            "description": "(optional) sets the max-width of preview image (default: \"200\")"
+        },
+        "properties7": {
+            "name": "preview_height",
+            "example": "",
+            "adjustable": "1",
+            "description": "(optional) sets the max-height of preview image (default: \"200\")"
+        },
+        "properties8": {
+            "name": "types",
+            "example": "",
+            "adjustable": "1",
+            "description": "(optional) is a comma-separated list of file types (images, audios, videos, documents, directories). Default is images. This list decides which of the allowed file extensions from Media Manager configuration are used. For example, images,documents means only files with an allowed images extension or an allowed documents extension are available for selection. When the type directories is used then the field will allow selection of a directory; this can be useful in setting extension parameters, to define an upload destination for example."
+        },
+        "properties9": {
+            "name": "showon",
+            "example": "",
+            "adjustable": "1",
+            "description": "(optional) show this field on the bases of the value in another field. https:\/\/joomla.stackexchange.com\/a\/17682\/2166"
+        },
+        "properties10": {
+            "name": "onchange",
+            "example": "",
+            "adjustable": "1",
+            "description": "(optional) HTML equivalent attribute (javascript use)"
+        }
+    },
+    "description": "The media form field type provides modal access to the media manager for the choice of an image or other kind of media, e.g. video. Users with appropriate permissions will be able to upload files.",
+    "datalenght": "255",
+    "datalenght_other": "",
+    "guid": "69957007-e3d4-4976-a32b-611d02dbad71"
+}
