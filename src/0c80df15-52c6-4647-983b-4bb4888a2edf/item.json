@@ -1,0 +1,93 @@
+{
+    "name": "Filelist",
+    "store": 0,
+    "null_switch": "NOT NULL",
+    "indexes": "0",
+    "datadefault_other": "",
+    "datadefault": "",
+    "short_description": "File dropdown from directory.",
+    "datatype": "VARCHAR",
+    "has_defaults": 1,
+    "properties": {
+        "properties0": {
+            "name": "type",
+            "example": "filelist",
+            "mandatory": "1",
+            "description": "(mandatory) must be filelist."
+        },
+        "properties1": {
+            "name": "name",
+            "example": "myfile",
+            "adjustable": "1",
+            "mandatory": "1",
+            "description": "(mandatory) is the unique name of the field."
+        },
+        "properties2": {
+            "name": "label",
+            "example": "Select a file",
+            "adjustable": "1",
+            "mandatory": "1",
+            "translatable": "1",
+            "description": "(mandatory) (translatable) is the descriptive title of the field."
+        },
+        "properties3": {
+            "name": "directory",
+            "example": "images\/stories",
+            "adjustable": "1",
+            "description": "(optional) is the filesystem path to the directory containing the files to be listed. If omitted the directory given by JPATH_ROOT is assumed."
+        },
+        "properties4": {
+            "name": "default",
+            "example": "",
+            "adjustable": "1",
+            "description": "(optional) is the default file name."
+        },
+        "properties5": {
+            "name": "description",
+            "example": "",
+            "adjustable": "1",
+            "translatable": "1",
+            "description": "(optional) (translatable) is text that will be shown as a tooltip when the user moves the mouse over the drop-down box."
+        },
+        "properties6": {
+            "name": "filter",
+            "example": "",
+            "adjustable": "1",
+            "description": "(optional) is a regular expression string which is used to filter the list of files selected for inclusion in the drop-down list. If omitted, all files in the directory are included. The filter argument expression is applied before the exclude argument expression. For information on constructing regular expressions see Regular expressions in parameter arguments."
+        },
+        "properties7": {
+            "name": "exclude",
+            "example": "",
+            "adjustable": "1",
+            "description": "(optional) is a regular expression string which is used to exclude files from the list. The exclude argument expression is applied after the filter argument expression. For information on constructing regular expressions see Regular expressions in parameter arguments."
+        },
+        "properties8": {
+            "name": "stripext",
+            "example": "",
+            "adjustable": "1",
+            "description": "(optional) is a Boolean argument. If true then file name extensions will be stripped from the file names listed. Also note that the file name will be saved without the extension too."
+        },
+        "properties9": {
+            "name": "hide_none",
+            "example": "",
+            "adjustable": "1",
+            "description": "(optional) is a Boolean argument. If true, the '- Do not use -' item is omitted from the drop-down list."
+        },
+        "properties10": {
+            "name": "hide_default",
+            "example": "",
+            "adjustable": "1",
+            "description": "(optional) is a Boolean argument. If true, the '- Use default -' item is omitted from the drop-down list."
+        },
+        "properties11": {
+            "name": "showon",
+            "example": "",
+            "adjustable": "1",
+            "description": "(optional) show this field on the bases of the value in another field. https:\/\/joomla.stackexchange.com\/a\/17682\/2166"
+        }
+    },
+    "description": "The Filelist form field type provides a drop down list of files from a specified directory. If the field has a saved value this is selected when the page is first loaded. If not, the default value (if any) is selected.",
+    "datalenght": "255",
+    "datalenght_other": "",
+    "guid": "0c80df15-52c6-4647-983b-4bb4888a2edf"
+}
