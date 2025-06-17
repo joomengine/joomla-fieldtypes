@@ -1,0 +1,178 @@
+{
+    "name": "ModalSelect",
+    "store": 0,
+    "null_switch": "NULL",
+    "indexes": "2",
+    "datadefault_other": "",
+    "datadefault": "",
+    "short_description": "Modal Select to manage a database record. (J5+ only)",
+    "datatype": "VARCHAR",
+    "has_defaults": 1,
+    "properties": {
+        "properties0": {
+            "name": "type",
+            "example": "ModalSelect",
+            "mandatory": "1",
+            "description": "(mandatory) must be ModalSelect."
+        },
+        "properties1": {
+            "name": "name",
+            "example": "targetview",
+            "adjustable": "1",
+            "mandatory": "1",
+            "description": "(mandatory) is the unique name of the field."
+        },
+        "properties2": {
+            "name": "label",
+            "example": "Enter some text",
+            "adjustable": "1",
+            "mandatory": "1",
+            "translatable": "1",
+            "description": "(mandatory) (translatable) is the descriptive title of the field."
+        },
+        "properties3": {
+            "name": "sql_title_table",
+            "example": "#__###component###_targetview",
+            "adjustable": "1",
+            "mandatory": "1",
+            "description": "Database table (with prefix) used for retrieving title."
+        },
+        "properties4": {
+            "name": "sql_title_column",
+            "example": "title",
+            "adjustable": "1",
+            "mandatory": "1",
+            "description": "Column used for the title display in the modal input field."
+        },
+        "properties5": {
+            "name": "sql_title_key",
+            "example": "id",
+            "adjustable": "1",
+            "mandatory": "1",
+            "description": "Primary key column name of the selected item (usually id)."
+        },
+        "properties6": {
+            "name": "urlSelect",
+            "example": "index.php?option=com_###component###&amp;view=targetviews&amp;layout=modal&amp;tmpl=component&amp;titleKey=id",
+            "adjustable": "1",
+            "description": "URL for opening modal to select an existing record. Important note, the [titleKey] in the url must be equal to [sql_title_key]"
+        },
+        "properties7": {
+            "name": "urlNew",
+            "example": "index.php?option=com_###component###&amp;task=targetview.add&amp;layout=modal&amp;tmpl=component",
+            "adjustable": "1",
+            "description": "URL for opening modal to create a new record."
+        },
+        "properties8": {
+            "name": "urlEdit",
+            "example": "index.php?option=com_###component###&amp;task=targetview.edit&amp;id={id}&amp;layout=modal&amp;tmpl=component",
+            "adjustable": "1",
+            "description": "URL for editing selected record. {id} dynamically replaced with the [sql_title_key] valiue."
+        },
+        "properties9": {
+            "name": "titleSelect",
+            "example": "Select Targetview",
+            "adjustable": "1",
+            "translatable": "1",
+            "description": "Modal title for the record selection window."
+        },
+        "properties10": {
+            "name": "titleNew",
+            "example": "New Targetview",
+            "adjustable": "1",
+            "translatable": "1",
+            "description": "Modal title displayed when creating a new record."
+        },
+        "properties11": {
+            "name": "titleEdit",
+            "example": "Edit Targetview",
+            "adjustable": "1",
+            "translatable": "1",
+            "description": "Modal title displayed when editing existing record."
+        },
+        "properties12": {
+            "name": "iconSelect",
+            "example": "icon-copy",
+            "adjustable": "1",
+            "description": "CSS icon class from Icomoon or FontAwesome for select button."
+        },
+        "properties13": {
+            "name": "select",
+            "example": "true",
+            "adjustable": "1",
+            "description": "Allow users to select a record (true\/false). Default: true."
+        },
+        "properties14": {
+            "name": "new",
+            "example": "false",
+            "adjustable": "1",
+            "description": "Allow users to create a new record (true\/false). Default: false."
+        },
+        "properties15": {
+            "name": "edit",
+            "example": "false",
+            "adjustable": "1",
+            "description": "Allow editing of selected record (true\/false). Default: false."
+        },
+        "properties16": {
+            "name": "clear",
+            "example": "true",
+            "adjustable": "1",
+            "description": "Allow clearing of the current selection (true\/false). Default: true."
+        },
+        "properties17": {
+            "name": "required",
+            "example": "false",
+            "adjustable": "1",
+            "description": "(optional) The field must be filled before submitting the form."
+        },
+        "properties18": {
+            "name": "class",
+            "example": "input-large",
+            "adjustable": "1",
+            "description": "(optional) is a CSS class name for the HTML form field. If omitted this will default to 'input-large'."
+        },
+        "properties19": {
+            "name": "description",
+            "example": "Enter some description",
+            "adjustable": "1",
+            "translatable": "1",
+            "description": "(optional) (translatable) is text that will be shown as a tooltip when the user moves the mouse over the drop-down box."
+        },
+        "properties20": {
+            "name": "hint",
+            "example": "Select a Targetview",
+            "adjustable": "1",
+            "translatable": "1",
+            "description": "(optional) The placeholder to display inside the text box."
+        },
+        "properties21": {
+            "name": "default",
+            "example": "",
+            "adjustable": "1",
+            "description": "(optional) (not translatable) is the default value of the field (item ID)."
+        },
+        "properties22": {
+            "name": "readonly",
+            "example": "false",
+            "adjustable": "1",
+            "description": "(optional) The field cannot be changed and will automatically inherit the default value"
+        },
+        "properties23": {
+            "name": "disabled",
+            "example": "false",
+            "adjustable": "1",
+            "description": "(optional) The field cannot be changed and will automatically inherit the default value - it will also not submit"
+        },
+        "properties24": {
+            "name": "showon",
+            "example": "",
+            "adjustable": "1",
+            "description": "(optional) Allows you to hide the field based on the value(s) of another field; for Joomla 3.2.4+ https:\/\/joomla.stackexchange.com\/a\/17682\/2166"
+        }
+    },
+    "description": "The ModalSelectField offers an intuitive, user-friendly modal popup interface within Joomla's administrator forms. It enables users to select existing records, create new records, edit existing records, or clear selected records directly from within the form. The field retrieves and displays the selected record's title dynamically, based on configurable database parameters. It simplifies relational data handling, enhancing the user experience by minimizing page transitions and streamlining record management tasks in Joomla administration interfaces.",
+    "datalenght": "255",
+    "datalenght_other": "",
+    "guid": "a1cdb0a5-517c-425c-998a-333e92af3e32"
+}
