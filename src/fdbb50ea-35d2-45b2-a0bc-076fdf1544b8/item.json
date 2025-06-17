@@ -1,0 +1,109 @@
+{
+    "name": "Integer",
+    "store": 0,
+    "null_switch": "NOT NULL",
+    "indexes": "0",
+    "datadefault_other": "",
+    "datadefault": "0",
+    "short_description": "Dropdown of integers in a set range.",
+    "datatype": "INT",
+    "has_defaults": 1,
+    "properties": {
+        "properties0": {
+            "name": "type",
+            "example": "integer",
+            "mandatory": "1",
+            "description": "(mandatory) must be integer."
+        },
+        "properties1": {
+            "name": "name",
+            "example": "size",
+            "adjustable": "1",
+            "mandatory": "1",
+            "description": "(mandatory) is the unique name of the field."
+        },
+        "properties2": {
+            "name": "label",
+            "example": "Size",
+            "adjustable": "1",
+            "mandatory": "1",
+            "translatable": "1",
+            "description": "(mandatory) (translatable) is the descriptive title of the field."
+        },
+        "properties3": {
+            "name": "default",
+            "example": "",
+            "adjustable": "1",
+            "description": "(optional) is the default value."
+        },
+        "properties4": {
+            "name": "message",
+            "example": "",
+            "adjustable": "1",
+            "translatable": "1",
+            "description": "(optional) (translatable) is text that will be shown as error on validation."
+        },
+        "properties5": {
+            "name": "description",
+            "example": "",
+            "adjustable": "1",
+            "translatable": "1",
+            "description": "(optional) (translatable) is text that will be shown as a tooltip when the user moves the mouse over the drop-down box."
+        },
+        "properties6": {
+            "name": "class",
+            "example": "text_area",
+            "adjustable": "1",
+            "description": "(optional) is a CSS class name for the HTML form field. If omitted this will default to 'text_area'."
+        },
+        "properties7": {
+            "name": "required",
+            "example": "",
+            "adjustable": "1",
+            "description": "(optional) The field must be filled before submitting the form."
+        },
+        "properties8": {
+            "name": "validate",
+            "example": "",
+            "adjustable": "1",
+            "description": "(optional) The validation method for the form field.  This value will determine which method is used to validate the value for a field."
+        },
+        "properties9": {
+            "name": "first",
+            "example": "1",
+            "adjustable": "1",
+            "mandatory": "1",
+            "description": "(mandatory) this value is the lowest on the list."
+        },
+        "properties10": {
+            "name": "last",
+            "example": "20",
+            "adjustable": "1",
+            "mandatory": "1",
+            "description": "(mandatory) this value is the highest on the list."
+        },
+        "properties11": {
+            "name": "step",
+            "example": "5",
+            "adjustable": "1",
+            "mandatory": "1",
+            "description": "(mandatory) each option will be the previous option incremented by this integer, starting with the first value until the last value is reached."
+        },
+        "properties12": {
+            "name": "showon",
+            "example": "",
+            "adjustable": "1",
+            "description": "(optional) show this field on the bases of the value in another field. https:\/\/joomla.stackexchange.com\/a\/17682\/2166"
+        },
+        "properties13": {
+            "name": "onchange",
+            "example": "",
+            "adjustable": "1",
+            "description": "(optional) HTML equivalent attribute (javascript use)"
+        }
+    },
+    "description": "The integer form field type provides a select box with a range of integer values. If the field has a value saved, this value is displayed when the page is first loaded. If not, the default value (if any) is selected.",
+    "datalenght": "11",
+    "datalenght_other": "",
+    "guid": "fdbb50ea-35d2-45b2-a0bc-076fdf1544b8"
+}
