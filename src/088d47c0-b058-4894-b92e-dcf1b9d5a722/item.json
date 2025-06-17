@@ -1,0 +1,112 @@
+{
+    "name": "Groupedlist",
+    "store": 0,
+    "null_switch": "NOT NULL",
+    "indexes": "0",
+    "datadefault_other": "",
+    "datadefault": "",
+    "short_description": "Dropdown list of grouped custom entries.",
+    "datatype": "",
+    "has_defaults": 0,
+    "properties": {
+        "properties0": {
+            "name": "type",
+            "example": "groupedlist",
+            "mandatory": "1",
+            "description": "(mandatory) must be groupedlist."
+        },
+        "properties1": {
+            "name": "name",
+            "example": "mygrouplist",
+            "adjustable": "1",
+            "mandatory": "1",
+            "description": "(mandatory) is the unique name of the field."
+        },
+        "properties2": {
+            "name": "label",
+            "example": "Select an option",
+            "adjustable": "1",
+            "mandatory": "1",
+            "translatable": "1",
+            "description": "(mandatory) (translatable) is the descriptive title of the field."
+        },
+        "properties3": {
+            "name": "description",
+            "example": "",
+            "adjustable": "1",
+            "translatable": "1",
+            "description": "(optional) (translatable) is text that will be shown as a tooltip when the user moves the mouse over the drop-down box."
+        },
+        "properties4": {
+            "name": "message",
+            "example": "",
+            "adjustable": "1",
+            "translatable": "1",
+            "description": "(optional) (translatable) is text that will be shown as error on validation."
+        },
+        "properties5": {
+            "name": "class",
+            "example": "list_class",
+            "adjustable": "1",
+            "description": "(optional) is a CSS class name for the HTML form field. If omitted this will default to 'inputbox'."
+        },
+        "properties6": {
+            "name": "multiple",
+            "example": "false",
+            "adjustable": "1",
+            "description": "(optional) is whether multiple items can be selected at the same time (true or false)."
+        },
+        "properties7": {
+            "name": "filter",
+            "example": "",
+            "adjustable": "1",
+            "description": "(optional) filter options"
+        },
+        "properties8": {
+            "name": "required",
+            "example": "",
+            "adjustable": "1",
+            "description": "(optional) The field must be filled before submitting the form."
+        },
+        "properties9": {
+            "name": "validate",
+            "example": "",
+            "adjustable": "1",
+            "description": "(optional) The validation method for the form field.  This value will determine which method is used to validate the value for a field."
+        },
+        "properties10": {
+            "name": "option",
+            "example": "Group Name@@1,1|Option 1|1,2|Option 2|1,Group Name 2@@2,3|Option 3|2",
+            "adjustable": "1",
+            "description": "(mandatory) set the options of this radio. Separate options with commas and use the pipe symbol to separate value from text."
+        },
+        "properties11": {
+            "name": "useglobal",
+            "example": "false",
+            "adjustable": "1",
+            "description": "(optional)  if set to true, it will show the value that is set in the global configuration if found in the database."
+        },
+        "properties12": {
+            "name": "default",
+            "example": "0",
+            "adjustable": "1",
+            "description": "(optional) is the default list item value."
+        },
+        "properties13": {
+            "name": "showon",
+            "example": "",
+            "adjustable": "1",
+            "description": "(optional) Allows you to hide the field based on the value(s) of another field; for Joomla 3.2.4+ https:\/\/joomla.stackexchange.com\/a\/17682\/2166"
+        },
+        "properties14": {
+            "name": "onchange",
+            "example": "",
+            "adjustable": "1",
+            "description": "(optional) HTML equivalent attribute (javascript use)"
+        }
+    },
+    "description": "The groupedlist form field type provides a drop down list or list box of custom-defined entries, organized into labeled groups. If the field has a saved value, this is selected when the page is first loaded. If not, the default value (if any) is selected.",
+    "datalenght": "",
+    "datalenght_other": "",
+    "guid": "088d47c0-b058-4894-b92e-dcf1b9d5a722"
+}
