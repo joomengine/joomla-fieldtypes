@@ -1,0 +1,148 @@
+{
+    "name": "Password",
+    "store": 5,
+    "null_switch": "NOT NULL",
+    "indexes": "0",
+    "datadefault_other": "",
+    "datadefault": "",
+    "short_description": "Text box for entry of a password.",
+    "datatype": "VARCHAR",
+    "has_defaults": 1,
+    "properties": {
+        "properties0": {
+            "name": "type",
+            "example": "password",
+            "mandatory": "1",
+            "description": "(mandatory) must be password."
+        },
+        "properties1": {
+            "name": "name",
+            "example": "mypassword",
+            "adjustable": "1",
+            "mandatory": "1",
+            "description": "(mandatory) is the unique name of the field."
+        },
+        "properties2": {
+            "name": "label",
+            "example": "Enter A Password",
+            "adjustable": "1",
+            "mandatory": "1",
+            "translatable": "1",
+            "description": "(mandatory) (translatable) is the descriptive title of the field."
+        },
+        "properties3": {
+            "name": "size",
+            "example": "10",
+            "adjustable": "1",
+            "description": "(optional) is the width of the text box in characters. If omitted the width is determined by the browser. The value of size does not limit the number of characters that may be entered."
+        },
+        "properties4": {
+            "name": "default",
+            "example": "secret",
+            "adjustable": "1",
+            "description": "(optional) is the default password."
+        },
+        "properties5": {
+            "name": "description",
+            "example": "",
+            "adjustable": "1",
+            "translatable": "1",
+            "description": "(optional) (translatable) is text that will be shown as a tooltip when the user moves the mouse over the drop-down box."
+        },
+        "properties6": {
+            "name": "message",
+            "example": "Error! Please add password here.",
+            "adjustable": "1",
+            "description": "(optional) The error message that will be displayed instead of the default message."
+        },
+        "properties7": {
+            "name": "class",
+            "example": "text_area",
+            "adjustable": "1",
+            "description": "(optional) is a CSS class name for the HTML form field. If omitted this will default to 'text_area'."
+        },
+        "properties8": {
+            "name": "readonly",
+            "example": "false",
+            "adjustable": "1",
+            "description": "(optional) The field cannot be changed and will automatically inherit the default value"
+        },
+        "properties9": {
+            "name": "disabled",
+            "example": "false",
+            "adjustable": "1",
+            "description": "(optional) The field cannot be changed and will automatically inherit the default value - it will also not submit"
+        },
+        "properties10": {
+            "name": "required",
+            "example": "false",
+            "adjustable": "1",
+            "description": "(optional) The field must be filled before submitting the form."
+        },
+        "properties11": {
+            "name": "validate",
+            "example": "",
+            "adjustable": "1",
+            "description": "(optional) The validation method for the form field.  This value will determine which method is used to validate the value for a field."
+        },
+        "properties12": {
+            "name": "rules",
+            "example": "false",
+            "adjustable": "1",
+            "description": "(optional) determines whether the password should adhere to certain rules."
+        },
+        "properties13": {
+            "name": "field",
+            "example": "",
+            "adjustable": "1",
+            "description": "(optional) used in validation of \"equals\" to link the field to match."
+        },
+        "properties14": {
+            "name": "filter",
+            "example": "raw",
+            "adjustable": "1",
+            "description": "(optional) allow the system to save certain html tags or raw data."
+        },
+        "properties15": {
+            "name": "hint",
+            "example": "Password Here",
+            "adjustable": "1",
+            "translatable": "1",
+            "description": "(optional) The placeholder to display inside the text box."
+        },
+        "properties16": {
+            "name": "autocomplete",
+            "example": "off",
+            "adjustable": "1",
+            "description": "(optional) The autocomplete state for the form field.  If 'off' element will not be automatically completed by browser."
+        },
+        "properties17": {
+            "name": "strengthmeter",
+            "example": "false",
+            "adjustable": "1",
+            "description": "(optional) measures the strength of the password."
+        },
+        "properties18": {
+            "name": "force",
+            "example": "off",
+            "adjustable": "1",
+            "description": "(optional) forces a password to be set."
+        },
+        "properties19": {
+            "name": "showon",
+            "example": "",
+            "adjustable": "1",
+            "description": "(optional) show this field on the bases of the value in another field. https:\/\/joomla.stackexchange.com\/a\/17682\/2166"
+        },
+        "properties20": {
+            "name": "onchange",
+            "example": "",
+            "adjustable": "1",
+            "description": "(optional) HTML equivalent attribute (javascript use)"
+        }
+    },
+    "description": "The password form field type provides a text box for entry of a password. The password characters will be obscured as they are entered. If the field has a saved value this is entered (in obscured form) into the text box. If not, the default value (if any)",
+    "datalenght": "100",
+    "datalenght_other": "",
+    "guid": "0022598d-0ee1-44f2-aa94-c2eb47595f73"
+}
