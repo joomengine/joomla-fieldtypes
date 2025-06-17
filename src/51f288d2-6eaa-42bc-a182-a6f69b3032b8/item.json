@@ -1,0 +1,130 @@
+{
+    "name": "Editor",
+    "store": 0,
+    "null_switch": "NULL",
+    "indexes": "0",
+    "datadefault_other": "",
+    "datadefault": "",
+    "short_description": "Editor area field.",
+    "datatype": "TEXT",
+    "has_defaults": 1,
+    "properties": {
+        "properties0": {
+            "name": "type",
+            "example": "editor",
+            "mandatory": "1",
+            "description": "(mandatory) must be editor."
+        },
+        "properties1": {
+            "name": "name",
+            "example": "mytextblock",
+            "adjustable": "1",
+            "mandatory": "1",
+            "description": "(mandatory) is the unique name of the parameter."
+        },
+        "properties2": {
+            "name": "label",
+            "example": "Test Field",
+            "adjustable": "1",
+            "mandatory": "1",
+            "translatable": "1",
+            "description": "(mandatory) (translatable) is the descriptive title of the field."
+        },
+        "properties3": {
+            "name": "default",
+            "example": "Some text",
+            "adjustable": "1",
+            "description": "(optional) (not translatable) is the default value."
+        },
+        "properties4": {
+            "name": "description",
+            "example": "",
+            "adjustable": "1",
+            "translatable": "1",
+            "description": "(optional) (translatable) is text that will be shown as a tooltip when the user moves the mouse over the label."
+        },
+        "properties5": {
+            "name": "message",
+            "example": "",
+            "adjustable": "1",
+            "translatable": "1",
+            "description": "(optional) (translatable) is text that will be shown as error on validation."
+        },
+        "properties6": {
+            "name": "width",
+            "example": "",
+            "adjustable": "1",
+            "description": "(optional) defines the width (in pixels) of the wysiwyg editor and defaults to 100%."
+        },
+        "properties7": {
+            "name": "height",
+            "example": "",
+            "adjustable": "1",
+            "description": "(optional) defines the height (in pixels) of the wysiwyg editor and defaults to 250px."
+        },
+        "properties8": {
+            "name": "cols",
+            "example": "",
+            "adjustable": "1",
+            "description": "(optional) defines the width of the editor (in columns)."
+        },
+        "properties9": {
+            "name": "rows",
+            "example": "",
+            "adjustable": "1",
+            "description": "(optional) defines the height of the editor (in rows)."
+        },
+        "properties10": {
+            "name": "buttons",
+            "example": "no",
+            "adjustable": "1",
+            "description": "(optional) can be an array of plugin buttons to be excluded or set to false. The default editors-xtd are: article, image, pagebreak and readmore."
+        },
+        "properties11": {
+            "name": "syntax",
+            "example": "",
+            "adjustable": "1",
+            "description": "(optional) can be used to set the code syntax matching for this field."
+        },
+        "properties12": {
+            "name": "hide",
+            "example": "",
+            "adjustable": "1",
+            "description": "(optional) array of plugin buttons to be hidden. eg... set buttons=\"true\" hide=\"readmore,pagebreak\""
+        },
+        "properties13": {
+            "name": "editor",
+            "example": "codemirror|none",
+            "adjustable": "1",
+            "description": "specifies the editor to be used and can include two options (editor=\"desired|alternative\")"
+        },
+        "properties14": {
+            "name": "filter",
+            "example": "safehtml",
+            "adjustable": "1",
+            "description": "(optional) allow the system to save certain html tags or raw data."
+        },
+        "properties15": {
+            "name": "required",
+            "example": "",
+            "adjustable": "1",
+            "description": "(optional) The field must be filled before submitting the form."
+        },
+        "properties16": {
+            "name": "validate",
+            "example": "",
+            "adjustable": "1",
+            "description": "(optional) The validation method for the form field.  This value will determine which method is used to validate the value for a field."
+        },
+        "properties17": {
+            "name": "showon",
+            "example": "",
+            "adjustable": "1",
+            "description": "(optional) show this field on the bases of the value in another field. https:\/\/joomla.stackexchange.com\/a\/17682\/2166"
+        }
+    },
+    "description": "The Editor field type provides a WYSIWYG (What You See Is What You Get) editor for rich text input, allowing users to format content visually without writing HTML.",
+    "datalenght": "",
+    "datalenght_other": "",
+    "guid": "51f288d2-6eaa-42bc-a182-a6f69b3032b8"
+}
