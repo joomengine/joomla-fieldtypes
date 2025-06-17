@@ -1,0 +1,119 @@
+{
+    "name": "List",
+    "store": 0,
+    "null_switch": "NOT NULL",
+    "indexes": "0",
+    "datadefault_other": "",
+    "datadefault": "",
+    "short_description": "Dropdown list of a custom-defined entries.",
+    "datatype": "",
+    "has_defaults": 0,
+    "properties": {
+        "properties0": {
+            "name": "type",
+            "example": "list",
+            "mandatory": "1",
+            "description": "(mandatory) must be list."
+        },
+        "properties1": {
+            "name": "name",
+            "example": "mylist",
+            "adjustable": "1",
+            "mandatory": "1",
+            "description": "(mandatory) is the unique name of the field."
+        },
+        "properties2": {
+            "name": "label",
+            "example": "Select an option",
+            "adjustable": "1",
+            "mandatory": "1",
+            "translatable": "1",
+            "description": "(mandatory) (translatable) is the descriptive title of the field."
+        },
+        "properties3": {
+            "name": "description",
+            "example": "",
+            "adjustable": "1",
+            "translatable": "1",
+            "description": "(optional) (translatable) is text that will be shown as a tooltip when the user moves the mouse over the drop-down box."
+        },
+        "properties4": {
+            "name": "message",
+            "example": "",
+            "adjustable": "1",
+            "translatable": "1",
+            "description": "(optional) (translatable) is text that will be shown as error on validation."
+        },
+        "properties5": {
+            "name": "class",
+            "example": "list_class",
+            "adjustable": "1",
+            "description": "(optional) is a CSS class name for the HTML form field. If omitted this will default to 'inputbox'."
+        },
+        "properties6": {
+            "name": "layout",
+            "example": "joomla.form.field.list-fancy-select",
+            "adjustable": "1",
+            "description": "(optional) New layout field added in Joomla 4"
+        },
+        "properties7": {
+            "name": "multiple",
+            "example": "false",
+            "adjustable": "1",
+            "description": "(optional) is whether multiple items can be selected at the same time (true or false)."
+        },
+        "properties8": {
+            "name": "filter",
+            "example": "",
+            "adjustable": "1",
+            "description": "(optional) filter options"
+        },
+        "properties9": {
+            "name": "required",
+            "example": "",
+            "adjustable": "1",
+            "description": "(optional) The field must be filled before submitting the form."
+        },
+        "properties10": {
+            "name": "validate",
+            "example": "",
+            "adjustable": "1",
+            "description": "(optional) The validation method for the form field.  This value will determine which method is used to validate the value for a field."
+        },
+        "properties11": {
+            "name": "option",
+            "example": "0|Option 1,1|Option 2,2|Option 1",
+            "adjustable": "1",
+            "mandatory": "1",
+            "description": "(mandatory) set the options of this radio. Separate options with commas and use the pipe symbol to separate value from text."
+        },
+        "properties12": {
+            "name": "useglobal",
+            "example": "",
+            "adjustable": "1",
+            "description": "(optional)  if set to true, it will show the value that is set in the global configuration if found in the database."
+        },
+        "properties13": {
+            "name": "default",
+            "example": "0",
+            "adjustable": "1",
+            "description": "(optional) is the default list item value."
+        },
+        "properties14": {
+            "name": "showon",
+            "example": "",
+            "adjustable": "1",
+            "description": "(optional) Allows you to hide the field based on the value(s) of another field; for Joomla 3.2.4+ https:\/\/joomla.stackexchange.com\/a\/17682\/2166"
+        },
+        "properties15": {
+            "name": "onchange",
+            "example": "",
+            "adjustable": "1",
+            "description": "(optional) HTML equivalent attribute (javascript use)"
+        }
+    },
+    "description": "The list form field type provides a drop down list or a list box of custom-defined entries. If the field has a saved value this is selected when the page is first loaded. If not, the default value (if any) is selected.",
+    "datalenght": "",
+    "datalenght_other": "",
+    "guid": "a51dfc06-1b9b-4d0a-86ba-f705bcd40d4d"
+}
