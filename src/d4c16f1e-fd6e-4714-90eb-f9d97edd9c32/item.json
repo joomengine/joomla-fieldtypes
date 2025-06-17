@@ -1,0 +1,100 @@
+{
+    "name": "SQL",
+    "store": 0,
+    "null_switch": "NOT NULL",
+    "indexes": "0",
+    "datadefault_other": "",
+    "datadefault": "",
+    "short_description": "Dropdown list populated by a database query.",
+    "datatype": "",
+    "has_defaults": 0,
+    "properties": {
+        "properties0": {
+            "name": "type",
+            "example": "sql",
+            "mandatory": "1",
+            "description": "(mandatory) must be sql."
+        },
+        "properties1": {
+            "name": "name",
+            "example": "title",
+            "adjustable": "1",
+            "mandatory": "1",
+            "description": "(mandatory) is the unique name of the field. This must match the name of the query results column that contains the values that will be shown to the user in the drop-down list, unless a different name is specified in the value_field attribute."
+        },
+        "properties2": {
+            "name": "label",
+            "example": "Select an article",
+            "adjustable": "1",
+            "mandatory": "1",
+            "translatable": "1",
+            "description": "(mandatory) (translatable) is the descriptive title of the field."
+        },
+        "properties3": {
+            "name": "query",
+            "example": "SELECT id, concat( title, ' (', created, ')') AS title FROM #__content",
+            "adjustable": "1",
+            "mandatory": "1",
+            "description": "(mandatory) is the SQL query which will provide the data for the drop-down list. The query must return two columns; one called 'value' (unless overridden by the key_field attribute) which will hold the values of the list items; the other called the same as the value of the name attribute (unless overridden by the value_field attribute) containing the text to be shown in the drop-down list."
+        },
+        "properties4": {
+            "name": "default",
+            "example": "10",
+            "adjustable": "1",
+            "description": "(optional) is the default value. This is the value of the 'value' field, unless overridden by the key_field attribute."
+        },
+        "properties5": {
+            "name": "required",
+            "example": "",
+            "adjustable": "1",
+            "description": "(optional) The field must be filled before submitting the form."
+        },
+        "properties6": {
+            "name": "readonly",
+            "example": "",
+            "adjustable": "1",
+            "description": "(optional) The field cannot be changed and will automatically inherit the default value"
+        },
+        "properties7": {
+            "name": "disabled",
+            "example": "",
+            "adjustable": "1",
+            "description": "(optional) The field cannot be changed and will automatically inherit the default value - it will also not submit"
+        },
+        "properties8": {
+            "name": "description",
+            "example": "",
+            "adjustable": "1",
+            "translatable": "1",
+            "description": "(optional) (translatable) is text that will be shown as a tooltip when the user moves the mouse over the drop-down box."
+        },
+        "properties9": {
+            "name": "key_field",
+            "example": "id",
+            "adjustable": "1",
+            "description": "(optional) is the name of the column that will contain values for the parameter. If omitted then the column called 'value' will be used, if it exists."
+        },
+        "properties10": {
+            "name": "value_field",
+            "example": "title",
+            "adjustable": "1",
+            "description": "(optional) is the name of the column that will contain values to be shown to the user in the drop-down list. If omitted then the column with the same name as the name attribute will be used, if it exists."
+        },
+        "properties11": {
+            "name": "translate",
+            "example": "",
+            "adjustable": "1",
+            "description": "(optional) will translate the output of the value_field if set to true. It defaults to false."
+        },
+        "properties12": {
+            "name": "showon",
+            "example": "",
+            "adjustable": "1",
+            "description": "(optional) show this field on the bases of the value in another field. https:\/\/joomla.stackexchange.com\/a\/17682\/2166"
+        }
+    },
+    "description": "Using this generic form field type forces you to write SQL in an XML file and is rather limited. For more flexibility, consider using a Custom FieldType.\r\n\r\nThe sql form field type provides a drop down list of entries obtained by running a query on the Joomla database. The first column returned by the query is used as the option value, and the second column (if present) is used as the label displayed in the dropdown.",
+    "datalenght": "",
+    "datalenght_other": "",
+    "guid": "d4c16f1e-fd6e-4714-90eb-f9d97edd9c32"
+}
