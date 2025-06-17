@@ -1,0 +1,154 @@
+{
+    "name": "CustomUser",
+    "store": 0,
+    "null_switch": "NOT NULL",
+    "indexes": "0",
+    "datadefault_other": "",
+    "datadefault": "0",
+    "short_description": "List of users.",
+    "datatype": "INT",
+    "has_defaults": 1,
+    "properties": {
+        "properties0": {
+            "name": "type",
+            "example": "staffusers",
+            "mandatory": "1",
+            "description": "(mandatory) can be anything, just not the same as any other default Joomla field type."
+        },
+        "properties1": {
+            "name": "name",
+            "example": "staff",
+            "adjustable": "1",
+            "mandatory": "1",
+            "description": "(mandatory) is the unique name of the field."
+        },
+        "properties2": {
+            "name": "label",
+            "example": "Staff",
+            "adjustable": "1",
+            "mandatory": "1",
+            "translatable": "1",
+            "description": "(mandatory) (translatable) is the descriptive title of the field."
+        },
+        "properties3": {
+            "name": "description",
+            "example": "",
+            "adjustable": "1",
+            "translatable": "1",
+            "description": "(optional) (translatable) is text that will be shown as a tooltip when the user moves the mouse over the drop-down box."
+        },
+        "properties4": {
+            "name": "class",
+            "example": "",
+            "adjustable": "1",
+            "description": "(optional) is a CSS class name for the HTML form field. If omitted this will default to 'inputbox'."
+        },
+        "properties5": {
+            "name": "multiple",
+            "example": "false",
+            "adjustable": "1",
+            "description": "(optional) is whether multiple items can be selected at the same time (true or false)."
+        },
+        "properties6": {
+            "name": "required",
+            "example": "",
+            "adjustable": "1",
+            "description": "(optional) The field must be filled before submitting the form."
+        },
+        "properties7": {
+            "name": "readonly",
+            "example": "",
+            "adjustable": "1",
+            "description": "(optional) The field cannot be changed and will automatically inherit the default value"
+        },
+        "properties8": {
+            "name": "disabled",
+            "example": "",
+            "adjustable": "1",
+            "description": "(optional) The field cannot be changed and will automatically inherit the default value - it will also not submit"
+        },
+        "properties9": {
+            "name": "default",
+            "example": "",
+            "adjustable": "1",
+            "translatable": "1",
+            "description": ""
+        },
+        "properties10": {
+            "name": "hint",
+            "example": "select a user",
+            "adjustable": "1",
+            "translatable": "1",
+            "description": ""
+        },
+        "properties11": {
+            "name": "showon",
+            "example": "",
+            "adjustable": "1",
+            "description": "(optional) show this field on the bases of the value in another field. https:\/\/joomla.stackexchange.com\/a\/17682\/2166"
+        },
+        "properties12": {
+            "name": "extends",
+            "example": "user",
+            "adjustable": "1",
+            "mandatory": "1",
+            "description": "The JFormField sub class that should be extended. The options are ('list','radio','checkboxes')"
+        },
+        "properties13": {
+            "name": "table",
+            "example": "#__users",
+            "mandatory": "1",
+            "description": "(mandatory) The table being linked to. Must be #__users"
+        },
+        "properties14": {
+            "name": "component",
+            "example": "com_users",
+            "mandatory": "1",
+            "description": "(mandatory) The name of the component where this table is found. Must be com_users"
+        },
+        "properties15": {
+            "name": "view",
+            "example": "###view###",
+            "adjustable": "1",
+            "mandatory": "1",
+            "description": "(mandatory) The single view name if the place this field is added."
+        },
+        "properties16": {
+            "name": "views",
+            "example": "###views###",
+            "adjustable": "1",
+            "mandatory": "1",
+            "description": "(mandatory) The list view name if the place this field is added."
+        },
+        "properties17": {
+            "name": "value_field",
+            "example": "name",
+            "adjustable": "1",
+            "mandatory": "1",
+            "description": "(mandatory) The name of the text field in table linked to."
+        },
+        "properties18": {
+            "name": "key_field",
+            "example": "id",
+            "adjustable": "1",
+            "mandatory": "1",
+            "description": "(mandatory) The field from the linked table to save in this table as the unique key."
+        },
+        "properties19": {
+            "name": "type_php_1",
+            "example": "\t\t\/\/ set the groups array\r\n\t\treturn Joomla___aeb8e463_291f_4445_9ac4_34b637c12dbd___Power::getParams('com_###component###')->get('###type###');",
+            "adjustable": "1",
+            "description": "The php for the getGroups method."
+        },
+        "properties20": {
+            "name": "type_phpx_1",
+            "example": "\t\t\/\/ To ensure that there is only one record per user\r\n\t\t\/\/ Get a db connection.\r\n\t\t$db = Factory::getDbo();\r\n\t\t\/\/ Create a new query object.\r\n\t\t$query = $db->getQuery(true);\r\n\t\t\/\/ Select all records from the #__###component###_###view### table from ###CODE### column\".\r\n\t\t$query->select($db->quoteName('###CODE###'));\r\n\t\t$query->from($db->quoteName('#__###component###_###view###'));\r\n\t\t$db->setQuery($query);\r\n\t\t$db->execute();\r\n\t\t$found = $db->getNumRows();\r\n\t\tif ($found)\r\n\t\t{\r\n\t\t\t\/\/ return all users already used\r\n\t\t\treturn array_unique($db->loadColumn());\r\n\t\t}\r\n\t\treturn null;",
+            "adjustable": "1",
+            "description": "The php for the getExcluded method."
+        }
+    },
+    "description": "A CustomUser fieldtype displays a filtered list of users based on selected user groups. It can exclude users already linked to items in the current view, making it useful for assigning unique users within specific contexts.",
+    "datalenght": "11",
+    "datalenght_other": "",
+    "guid": "a4a39f70-070f-459c-be4b-0ac103a29b9a"
+}
