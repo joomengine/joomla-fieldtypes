@@ -1,0 +1,121 @@
+{
+    "name": "Subform",
+    "store": 0,
+    "null_switch": "NOT NULL",
+    "indexes": "0",
+    "datadefault_other": "",
+    "datadefault": "",
+    "short_description": "Repeating sets of nested form fields.",
+    "datatype": "TEXT",
+    "has_defaults": 1,
+    "properties": {
+        "properties0": {
+            "name": "type",
+            "example": "subform",
+            "description": "(mandatory) must be subform."
+        },
+        "properties1": {
+            "name": "name",
+            "example": "options",
+            "adjustable": "1",
+            "description": "(mandatory) is the unique name of the parameter"
+        },
+        "properties2": {
+            "name": "label",
+            "example": "The Option List",
+            "adjustable": "1",
+            "translatable": "1",
+            "description": "(mandatory) (translatable) is the descriptive title of the field."
+        },
+        "properties3": {
+            "name": "layout",
+            "example": "joomla.form.field.subform.repeatable-table",
+            "adjustable": "1",
+            "description": "(mandatory) The layout for the repeatable table."
+        },
+        "properties4": {
+            "name": "component",
+            "example": "",
+            "adjustable": "1",
+            "description": "(optional) To change the component where it should search for layout"
+        },
+        "properties5": {
+            "name": "client",
+            "example": "",
+            "adjustable": "1",
+            "description": "(optional) Function to initialise the application clientFrontend: site or 0Backend: admin or 1"
+        },
+        "properties6": {
+            "name": "multiple",
+            "example": "true",
+            "adjustable": "1",
+            "mandatory": "1",
+            "description": "(mandatory) The rows to be multiple."
+        },
+        "properties7": {
+            "name": "buttons",
+            "example": "add,remove,move",
+            "adjustable": "1",
+            "description": "(optional) Which buttons to show if multiple mode is true.Options: add,remove,move"
+        },
+        "properties8": {
+            "name": "fields",
+            "example": "guid,guid,guid",
+            "adjustable": "1",
+            "description": "(mandatory) The fields to add to the modal. All fields must first be created in component builder as a field before you can add them here, since you must use the id of the field. Separate the field ids\/guids with commas. Do not add custom fields that are not also used in this component."
+        },
+        "properties9": {
+            "name": "formsource",
+            "example": "",
+            "adjustable": "1",
+            "description": "(optional) you can add a path to a xml file containing the fields."
+        },
+        "properties10": {
+            "name": "description",
+            "example": "",
+            "adjustable": "1",
+            "translatable": "1",
+            "description": "(optional) (translatable) description text for the form field. Displays at the top of the modal with the name as well as in the usual position in the form"
+        },
+        "properties11": {
+            "name": "default",
+            "example": "",
+            "adjustable": "1",
+            "description": "(optional) The default value for the form field if the field is left empty. Note this has to be a json string compatible with the contents of the form field."
+        },
+        "properties12": {
+            "name": "icon",
+            "example": "list",
+            "adjustable": "1",
+            "description": "(optional) The icon to show on the select button (is prefixed with \"icon-\")."
+        },
+        "properties13": {
+            "name": "max",
+            "example": "50",
+            "adjustable": "1",
+            "description": "(optional) The maximum number of rows of fields allowed (by default 999 to be effectively infinite)"
+        },
+        "properties14": {
+            "name": "min",
+            "example": "",
+            "adjustable": "1",
+            "description": "(optional) The minimum number of rows of fields required"
+        },
+        "properties15": {
+            "name": "filter",
+            "example": "",
+            "adjustable": "1",
+            "description": "(optional) Use only if you would like to save raw data, since the default is best."
+        },
+        "properties16": {
+            "name": "showon",
+            "example": "",
+            "adjustable": "1",
+            "description": "(optional) show this field on the bases of the value in another field. https:\/\/joomla.stackexchange.com\/a\/17682\/2166"
+        }
+    },
+    "description": "Provides a form containing repeatable rows of nested fields that you define. Users can add as many entries as needed, with each row replicating the specified field structure. This field type relies on a jQuery-based JavaScript file to handle dynamic behaviour and is ideal for managing structured, multi-value input.",
+    "datalenght": "",
+    "datalenght_other": "",
+    "guid": "7139f2c8-a70a-46a6-bbe3-4eefe54ca515"
+}
