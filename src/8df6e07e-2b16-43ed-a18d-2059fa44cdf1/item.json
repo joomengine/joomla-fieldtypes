@@ -1,0 +1,143 @@
+{
+    "name": "URL",
+    "store": 0,
+    "null_switch": "NOT NULL",
+    "indexes": "0",
+    "datadefault_other": "",
+    "datadefault": "",
+    "short_description": "Text input for a valid URL.",
+    "datatype": "VARCHAR",
+    "has_defaults": 1,
+    "properties": {
+        "properties0": {
+            "name": "type",
+            "example": "url",
+            "mandatory": "1",
+            "description": "(mandatory) must be url."
+        },
+        "properties1": {
+            "name": "name",
+            "example": "website",
+            "adjustable": "1",
+            "mandatory": "1",
+            "description": "(mandatory) is the unique name of the field."
+        },
+        "properties2": {
+            "name": "label",
+            "example": "Website",
+            "adjustable": "1",
+            "mandatory": "1",
+            "translatable": "1",
+            "description": "(mandatory) (translatable) is the descriptive title of the field."
+        },
+        "properties3": {
+            "name": "size",
+            "example": "10",
+            "adjustable": "1",
+            "description": "(optional) is the width of the text box in characters. If omitted the width is determined by the browser. The value of size does not limit the number of characters that may be entered."
+        },
+        "properties4": {
+            "name": "maxlength",
+            "example": "50",
+            "adjustable": "1",
+            "description": "(optional) limits the number of characters that may be entered."
+        },
+        "properties5": {
+            "name": "default",
+            "example": "",
+            "adjustable": "1",
+            "description": "(optional) (not translatable) is the default value."
+        },
+        "properties6": {
+            "name": "description",
+            "example": "Enter website address",
+            "adjustable": "1",
+            "translatable": "1",
+            "description": "(optional) (translatable) is text that will be shown as a tooltip when the user moves the mouse over the drop-down box."
+        },
+        "properties7": {
+            "name": "class",
+            "example": "text_area",
+            "adjustable": "1",
+            "description": "(optional) is a CSS class name for the HTML form field. If omitted this will default to 'text_area'."
+        },
+        "properties8": {
+            "name": "readonly",
+            "example": "",
+            "adjustable": "1",
+            "description": "(optional) The field cannot be changed and will automatically inherit the default value"
+        },
+        "properties9": {
+            "name": "disabled",
+            "example": "",
+            "adjustable": "1",
+            "description": "(optional) The field cannot be changed and will automatically inherit the default value - it will also not submit"
+        },
+        "properties10": {
+            "name": "required",
+            "example": "",
+            "adjustable": "1",
+            "description": "(optional) The field must be filled before submitting the form."
+        },
+        "properties11": {
+            "name": "relative",
+            "example": "false",
+            "adjustable": "1",
+            "description": "(optional) set to true for relative URLs"
+        },
+        "properties12": {
+            "name": "filter",
+            "example": "url",
+            "adjustable": "1",
+            "description": "(optional) allow the system to save certain html tags or raw data."
+        },
+        "properties13": {
+            "name": "validated",
+            "example": "url",
+            "adjustable": "1",
+            "description": "(optional) The validation method for the form field.  This value will determine which method is used to validate the value for a field."
+        },
+        "properties14": {
+            "name": "scheme",
+            "example": "http,https,mailto",
+            "adjustable": "1",
+            "description": "(optional) Validates that the value is a URL with a valid scheme (which can be restricted by the optional comma-separated field 'scheme'), and passes a basic syntax check."
+        },
+        "properties15": {
+            "name": "message",
+            "example": "Error! Please add website here.",
+            "adjustable": "1",
+            "translatable": "1",
+            "description": "(optional) (translatable) is text that will be shown as error on validation."
+        },
+        "properties16": {
+            "name": "hint",
+            "example": "Your Website Here",
+            "adjustable": "1",
+            "translatable": "1",
+            "description": "(optional) The placeholder to display inside the text box."
+        },
+        "properties17": {
+            "name": "autocomplete",
+            "example": "on",
+            "adjustable": "1",
+            "description": "(optional) The autocomplete state for the form field.  If 'off' element will not be automatically completed by browser."
+        },
+        "properties18": {
+            "name": "showon",
+            "example": "",
+            "adjustable": "1",
+            "description": "(optional) Allows you to hide the field based on the value(s) of another field; for Joomla 3.2.4+ https:\/\/joomla.stackexchange.com\/a\/17682\/2166"
+        },
+        "properties19": {
+            "name": "onchange",
+            "example": "",
+            "adjustable": "1",
+            "description": "(optional) HTML equivalent attribute (javascript use)"
+        }
+    },
+    "description": "The URL field type is a text input specifically intended for entering web addresses. It functions like a standard text field but uses the url input type to enable browser-level validation. If a fully qualified URL (one with a scheme and domain, such as http:\/\/example.com) includes internationalized domain names (IDNs) with non-ASCII characters (e.g., \u00ea or \u03a8), it will be automatically converted to a valid ASCII-compatible format (Punycode) for proper handling and storage.",
+    "datalenght": "255",
+    "datalenght_other": "",
+    "guid": "8df6e07e-2b16-43ed-a18d-2059fa44cdf1"
+}
