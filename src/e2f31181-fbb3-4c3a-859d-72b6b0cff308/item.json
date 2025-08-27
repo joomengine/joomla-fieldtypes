@@ -30,6 +30,12 @@
             "translatable": "1",
             "description": "(mandatory) (translatable) is the descriptive title of the field."
         },
+        "properties11": {
+            "name": "default",
+            "example": "",
+            "adjustable": "1",
+            "description": "(optional) (not translatable) is the usergroup id of the default selection in the dropdown list."
+        },
         "properties3": {
             "name": "description",
             "example": "Select a group",
