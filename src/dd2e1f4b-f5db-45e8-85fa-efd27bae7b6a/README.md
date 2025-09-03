@@ -38,9 +38,9 @@ The list form field type provides a drop down list or a list box of other curren
 
 ```php
 // Get the user object.
-		$user = Factory::getUser();
+		$user = Joomla___39403062_84fb_46e0_bac4_0023f766e827___Power::getApplication()->getIdentity();
 		// Get the databse object.
-		$db = Factory::getDBO();
+		$db = Joomla___39403062_84fb_46e0_bac4_0023f766e827___Power::getContainer()->get(Joomla___7bd29d76_73c9_4c07_a5da_4f7a32aff78f___Power::class);
 		$query = $db->getQuery(true);
 		$query->select($db->quoteName(array('a.###ID###','a.###TEXT###'),array('###ID###','###CODE_TEXT###')));
 		$query->from($db->quoteName('###TABLE###', 'a'));
