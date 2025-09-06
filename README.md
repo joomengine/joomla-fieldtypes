@@ -87,6 +87,7 @@ This design promotes **collaborative sharing** while allowing **custom autonomy*
  - **Terms@** | [Details](src/20e88943-08db-49e6-a571-dba70cdf4cca) | [Settings](src/20e88943-08db-49e6-a571-dba70cdf4cca/item.json) | Displays Joomla terms and conditions.
  - **Text** | [Details](src/201327fe-3067-4316-a155-3fe2a52e05c0) | [Settings](src/201327fe-3067-4316-a155-3fe2a52e05c0/item.json) | Single-line text input field.
  - **Textarea** | [Details](src/76fe1250-6fa7-49e5-a0ee-f06d8d4c9f99) | [Settings](src/76fe1250-6fa7-49e5-a0ee-f06d8d4c9f99/item.json) | Multi-line text input area.
+ - **Time** | [Details](src/84510e0d-bf32-48ea-b522-1bee7c83e172) | [Settings](src/84510e0d-bf32-48ea-b522-1bee7c83e172/item.json) | Time form field
  - **Timezone** | [Details](src/ed8d8cf4-cb05-49cc-95ef-4ef275f539f9) | [Settings](src/ed8d8cf4-cb05-49cc-95ef-4ef275f539f9/item.json) | Dropdown list of time zones.
  - **URL** | [Details](src/8df6e07e-2b16-43ed-a18d-2059fa44cdf1) | [Settings](src/8df6e07e-2b16-43ed-a18d-2059fa44cdf1/item.json) | Text input for a valid URL.
  - **User** | [Details](src/b0641980-5e78-42f6-972f-86aa607db23e) | [Settings](src/b0641980-5e78-42f6-972f-86aa607db23e/item.json) | Modal selector for Joomla users.
