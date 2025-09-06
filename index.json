@@ -334,5 +334,12 @@
         "settings": "src\/a1cdb0a5-517c-425c-998a-333e92af3e32\/item.json",
         "guid": "a1cdb0a5-517c-425c-998a-333e92af3e32",
         "desc": "Modal Select to manage a database record. (J5+ only)"
+    },
+    "84510e0d-bf32-48ea-b522-1bee7c83e172": {
+        "name": "Time",
+        "path": "src\/84510e0d-bf32-48ea-b522-1bee7c83e172",
+        "settings": "src\/84510e0d-bf32-48ea-b522-1bee7c83e172\/item.json",
+        "guid": "84510e0d-bf32-48ea-b522-1bee7c83e172",
+        "desc": "Time form field"
     }
 }
