@@ -126,6 +126,18 @@
             "adjustable": "1",
             "description": "(optional) The field must be filled before submitting the form."
         },
+        "properties25": {
+            "name": "filter",
+            "example": "STRING",
+            "adjustable": "1",
+            "description": "(optional) allow the system to save certain html tags or raw data."
+        },
+        "properties26": {
+            "name": "validate",
+            "example": "",
+            "adjustable": "1",
+            "description": "(optional) The validation method for the form field.  This value will determine which method is used to validate the value for a field."
+        },
         "properties18": {
             "name": "class",
             "example": "input-large",
