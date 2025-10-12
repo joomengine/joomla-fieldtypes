@@ -39,9 +39,15 @@
         },
         "properties4": {
             "name": "class",
-            "example": "btn-group btn-group-yesno",
+            "example": "",
             "adjustable": "1",
             "description": "(optional) New in Joomla 3, if set to class=\"btn-group btn-group-yesno\" will show the nice coloured buttons"
+        },
+        "properties15": {
+            "name": "layout",
+            "example": "joomla.form.field.radio.switcher",
+            "adjustable": "1",
+            "description": "(optional) New layout field added in Joomla 4 layout=\"joomla.form.field.radio.switcher\" will show the nice switcher"
         },
         "properties5": {
             "name": "option",
@@ -67,6 +73,12 @@
             "example": "",
             "adjustable": "1",
             "description": "(optional) The field must be filled before submitting the form."
+        },
+        "properties14": {
+            "name": "filter",
+            "example": "",
+            "adjustable": "1",
+            "description": "(optional) allow the system to save certain html tags or raw data."
         },
         "properties9": {
             "name": "validate",
