@@ -42,6 +42,12 @@
             "adjustable": "1",
             "description": "(optional) limits the number of characters that may be entered."
         },
+        "properties19": {
+            "name": "charcounter",
+            "example": "",
+            "adjustable": "1",
+            "description": "Does this field support a character counter? (true or false)"
+        },
         "properties5": {
             "name": "default",
             "example": "Some text",
