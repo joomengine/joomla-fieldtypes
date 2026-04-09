@@ -84,7 +84,7 @@
             "name": "multiple",
             "example": "false",
             "adjustable": "1",
-            "description": "(optional) is whether multiple items can be selected at the same time (true or false)."
+            "description": "(optional) determines whether multiple items can be selected at the same time (true or false). When set to true, the database field type must be set to TEXT to properly store multiple values; otherwise, data storage issues may occur."
         },
         "properties12": {
             "name": "showon",
